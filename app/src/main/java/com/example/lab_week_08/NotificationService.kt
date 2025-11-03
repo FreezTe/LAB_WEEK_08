@@ -50,7 +50,7 @@ class NotificationService : Service() {
         //to be executed.
 //Here, we're instantiating a new HandlerThread called "SecondThread"
         //then we pass that HandlerThread into the main Handler called
-        serviceHandler
+        //serviceHandler
         val handlerThread = HandlerThread("SecondThread")
             .apply { start() }
         serviceHandler = Handler(handlerThread.looper)
